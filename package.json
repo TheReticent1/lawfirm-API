@@ -1,0 +1,28 @@
+{
+  "name": "lawfirm-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start":"nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheReticent1/lawfirm-API.git"
+  },
+  "author": "kamlesh mohane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheReticent1/lawfirm-API/issues"
+  },
+  "homepage": "https://github.com/TheReticent1/lawfirm-API#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1"
+  }
+}
