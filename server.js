@@ -13,6 +13,7 @@ const { mongoose } = require("./db/database");
 
 //Routes
 const appointmentRoutes = require("./routes/appointment");
+const adminRoutes = require("./routes/admin");
 
 //middlewares
 app.use(bodyParser.json());
@@ -21,7 +22,8 @@ app.use(cors());
 app.use(morgan("combined", { stream: logger.stream }));
 app.use(expressValidator());
 app.use("/", appointmentRoutes);
+app.use("/", adminRoutes);
 
-app.listen(3000, () => {
+app.listen(3000,()=>{
   logger.info("server running on port 3000");
-});
+})
